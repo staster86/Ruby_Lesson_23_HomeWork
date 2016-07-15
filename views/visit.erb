@@ -27,6 +27,7 @@
         <input name="datetime" type="text" class="form-control" placeholder="Введите дату и время">
     </div>
 
+    <!-- Использование стиля и скрипта ColorPicker для отрисовки выбора цвета -->
     <div class="form-group">
         <label>В какие цвета хотите себя окрасить:</label>
         <select id="color" name="color">
@@ -45,17 +46,13 @@
         </select>
     </div>
 
-
-
-    <br>
-
     <button type="submit" class="btn btn-primary">Записаться</button>
 
 </form>
 
 
 <script type="text/javascript">
-
+//Использование jQuery для подключение скрипта отрисовки выбора цвета
 $('#color').simplecolorpicker();
 
 $('#aaa').css('background-color','yellow'); //Способ обращения по id

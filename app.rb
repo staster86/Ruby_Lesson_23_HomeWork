@@ -4,7 +4,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 
 get '/' do
-	erb "Hello! <a href=\"https://github.com/bootstrap-ruby/sinatra-bootstrap\">Original</a> pattern has been modified for <a href=\"http://rubyschool.us/\">Ruby School</a>"
+	erb "Привет! <a href=\"https://github.com/bootstrap-ruby/sinatra-bootstrap\">Оригинальный Twitter Botstrap</a> скопировали и чуть изменили его <a href=\"http://rubyschool.us/\">Ruby School</a>"
 end
 
 get '/about' do
@@ -30,7 +30,7 @@ post '/visit' do
 	f.write "Barber: #{barber}, User #{username}, Phone #{phone}, Date and time: #{datetime}, Color #{color}\n"
 	f.close
 
-	erb "Ok! Barber: #{barber}, User #{username}, Phone #{phone}, Date and time: #{datetime}, Color #{color} you waiting!"
+	erb "Хорошо уважаемый #{username}! Ваш парикхмахер: #{barber}, телефон для связи с Вами #{phone}. Ждём Вас #{datetime} и покрасим ваши волосы в #{color} цвет."
 end
 
 post '/contacts' do
@@ -41,5 +41,5 @@ post '/contacts' do
 	f.write "Email: #{email}, Message: #{message}\n"
 	f.close
 
-	erb :contacts
+	erb "Спасибо за отзыв! Мы учтём Ваши пожелания."
 end
