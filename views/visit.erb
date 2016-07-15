@@ -1,6 +1,20 @@
 <h2>Записаться</h2>
 <p>На этой странице вы сможете записаться к нам в Barber Shop</p>
 
+<script type="text/javascript">
+    $(function(){
+        //Использование jQuery для подключение скрипта отрисовки выбора цвета
+        $('#color').simplecolorpicker();
+
+        //Маска ввода телефонного номера
+        $("#phone").mask("8(999) 999-9999");
+
+        $('#aaa').css('background-color','yellow'); //Способ обращения по id
+        $('#bbb').css('background-color','red');
+        $('.ccc').css('background-color','blue'); //Способ многократного использования
+    });
+</script>
+
 <form action="/visit" method="POST" role="form">
 
     <div>
@@ -49,18 +63,3 @@
     <button type="submit" class="btn btn-primary">Записаться</button>
 
 </form>
-
-
-<script type="text/javascript">
-    //Использование jQuery для подключение скрипта отрисовки выбора цвета
-    $('#color').simplecolorpicker();
-
-    //Маска ввода телефонного номера
-    $(function(){
-      $("#phone").mask("8(999) 999-9999");
-    });
-
-    $('#aaa').css('background-color','yellow'); //Способ обращения по id
-    $('#bbb').css('background-color','red');
-    $('.ccc').css('background-color','blue'); //Способ многократного использования
-</script>
